@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    animation: backgroundShift 10s infinite alternate;
+}
+
+/* Header */
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Main content */
+.main-content {
+    padding: 2em;
+    background-color: #ffffffaa;
+    border-radius: 10px;
+    margin: 2em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.main-content h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #7b2cbf;
+}
+
+button {
+    background-color: #4cc9f0;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4361ee;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #3f37c9;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Background animation */
+@keyframes backgroundShift {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
